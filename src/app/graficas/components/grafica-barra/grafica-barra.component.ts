@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChartConfiguration, ChartData, ChartEvent, ChartType } from 'chart.js';
+import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
   selector: 'app-grafica-barra',
@@ -6,11 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class GraficaBarraComponent implements OnInit {
+export class GraficaBarraComponent  {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
