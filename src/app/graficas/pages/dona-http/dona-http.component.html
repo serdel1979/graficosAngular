@@ -1,1 +1,15 @@
-<p>dona-http works!</p>
+<p>Redes Sociales</p>
+<hr>
+<div *ngIf="!hayData; else divGrafico" class="alert alert-info">
+    Cargando!!!
+</div>
+<ng-template #divGrafico>
+    <div class="row" #divGrafico>
+        <div class="col">
+            <div style="display: block">
+                <canvas baseChart [data]="dChartData" [type]="doughnutChartType">
+                </canvas>
+            </div>
+        </div>
+    </div>
+</ng-template>

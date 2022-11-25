@@ -8,6 +8,7 @@ import { DonaComponent } from './pages/dona/dona.component';
 import { DonaHttpComponent } from './pages/dona-http/dona-http.component';
 import { GraficaBarraComponent } from './components/grafica-barra/grafica-barra.component';
 import { NgChartsModule } from 'ng2-charts';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NgChartsModule } from 'ng2-charts';
   imports: [
     CommonModule,
     NgChartsModule,
-    GraficasRoutingModule
+    GraficasRoutingModule,
+    HttpClientModule
   ]
 })
 export class GraficasModule { }
